@@ -12,21 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".Ch4Activity01">
-
-            </activity>
+        <activity android:name=".Ch4Activity01"></activity>
         <activity android:name=".Ch5Activity1">
+            <activity android:name=".Ch4Activity2" />
+            <activity android:name=".Ch4Activity3"></activity>
+        </activity>
+        <activity android:name=".Ch6Activity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        <activity android:name=".Ch4Activity2"></activity>
-        <activity android:name=".Ch4Activity3">
-
-        </activity>
-
         </activity>
     </application>
 
