@@ -25,6 +25,7 @@ public class Ch5Activity1 extends AppCompatActivity {
         Toast.makeText(this,"toast1",Toast.LENGTH_LONG).show();
     }
 
+
     public void toast2(View view){
        Toast toast= Toast.makeText(this,"toast2",Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER,0,0);
