@@ -1,5 +1,6 @@
 package cn.edu.sdwu.android.classroom.sn170507180127;
 
+import android.app.NotificationManager;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.support.v7.app.AppCompatActivity;
@@ -72,8 +73,11 @@ public class Ch6Activity1 extends AppCompatActivity {
         }catch (Exception e){
             Log.e(Ch6Activity1.class.toString(),e.toString());
         }
-
+        //使用notificationManager取消通知
+        NotificationManager notificationManager=(NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        notificationManager.cancel(101);
     }
+
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
